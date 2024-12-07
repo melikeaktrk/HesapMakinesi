@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .calculator {
+            display: inline-block;
+            text-align: center;
+        }
+
+        input {
+            width: 100px;
+            margin: 5px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hesap Makinesi</h1>
+    <div class="calculator">
+        <input type="number" id="num1" placeholder="Sayı 1">
+        <input type="number" id="num2" placeholder="Sayı 2">
+        <br>
+        <button onclick="topla()">+</button>
+        <button onclick="cikar()">-</button>
+        <button onclick="carp()">*</button>
+        <button onclick="bol()">/</button>
+        <br>
+        <p id="sonuc">Sonuç: </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
